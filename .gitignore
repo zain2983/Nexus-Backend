@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+
+# Environment
+.env
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# IDEs/editors
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Static and media files (if generated during runtime)
+staticfiles/
+media/
+
+# Migrations (optional — if you want to ignore generated migrations)
+# **/migrations/
+# !*/migrations/__init__.py
+
+# Coverage/test reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
