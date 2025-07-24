@@ -30,11 +30,12 @@ SECRET_KEY = 'django-insecure-k+g7%o4xu-9n*=5guqgb$8%nwfqyb*41%n1nu(i!3es2c#sx%9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nexus-backend-bye3.onrender.com']
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-]
+
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:5173",
+# ]
 
 # Application definition
 
