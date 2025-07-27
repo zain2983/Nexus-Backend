@@ -28,16 +28,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-k+g7%o4xu-9n*=5guqgb$8%nwfqyb*41%n1nu(i!3es2c#sx%9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = [
-    'nexus-backend-bye3.onrender.com',
-]
+DEBUG = True
 
 
-CORS_ALLOWED_ORIGINS = [
-    "https://nexus-frontend-eta.vercel.app",
-]
+ALLOWED_HOSTS = []
+
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:5713",  # ✅ local frontend
+
+# ]
+
+# CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Application definition
 
