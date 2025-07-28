@@ -17,6 +17,8 @@ ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 # CORS
 CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:5713").split(",")
 
+# CORS_ALLOW_ALL_ORIGINS = True
+
 print(f"SECRET_KEY: {SECRET_KEY}")  # Debugging line to check secret key
 print(f"DEBUG: {DEBUG}")  # Debugging line to check debug status
 print(f"CORS_ALLOWED_ORIGINS : {CORS_ALLOWED_ORIGINS}")
