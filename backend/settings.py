@@ -13,7 +13,8 @@ SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-k+g7%o4xu-9n*=5guqgb$8%nwf
 DEBUG = os.getenv("DEBUG", "True") == "True"
 
 # Use comma-separated ALLOWED_HOSTS in env, or fallback to localhost
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
+# ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
+ALLOWED_HOSTS = ['*']
 
 # CORS
 CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:5173").split(",")
