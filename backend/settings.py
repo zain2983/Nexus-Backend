@@ -25,7 +25,9 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "0.0.0.0",
-    "https://nexus-backend-bye3.onrender.com",
+    "nexus-backend-bye3.onrender.com",
+    
+
 ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -34,6 +36,11 @@ CORS_ALLOWED_ORIGINS = [
     "https://nexus-frontend-eta.vercel.app/auth/login",
     "https://nexus-frontend-eta.vercel.app/auth/signup",
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://nexus-frontend-eta.vercel.app",
+]
+
 
 
 sepr = "=" * 50
