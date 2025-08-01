@@ -10,16 +10,31 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Use env secret key in production, fallback to insecure one in local dev
 SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-k+g7%o4xu-9n*=5guqgb$8%nwfqyb*41%n1nu(i!3es2c#sx%9")
 
-DEBUG = os.getenv("DEBUG", "True") == "True"
-
-# Use comma-separated ALLOWED_HOSTS in env, or fallback to localhost
+# DEBUG = os.getenv("DEBUG", "True") == "True"
 # ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
-ALLOWED_HOSTS = ['*']
+# CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:5173").split(",")
 
-# CORS
-CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:5173").split(",")
-
+# ALLOWED_HOSTS = ['*']
 # CORS_ALLOW_ALL_ORIGINS = True
+
+
+
+DEBUG = False
+
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "0.0.0.0",
+    "https://nexus-backend-bye3.onrender.com",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "https://nexus-frontend-eta.vercel.app/",
+    "https://nexus-frontend-eta.vercel.app/auth/login",
+    "https://nexus-frontend-eta.vercel.app/auth/signup",
+]
+
 
 sepr = "=" * 50
 print(sepr)
